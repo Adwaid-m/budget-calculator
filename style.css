@@ -1,0 +1,244 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.bd{
+    background-color: rgb(159, 184, 214);
+    color: rgb(12, 6, 6);
+}
+.container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+}
+.budget_number{
+    display: flex;
+    float: left;
+    justify-content: space-between;
+    width: 1000px;
+    align-items: center;
+    /* max-width: 300%; */
+    margin: 10px 10px 100px;
+}
+.number{
+    display: flex;
+    width: 800px;
+    height: 100px;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(196, 169, 169);
+    padding: 10px;
+    border-radius: 0px;
+    border: 2px solid gold;
+
+}
+.amount_container{
+    display: flex; 
+    
+}
+#amount_earned,#earned_symbol{
+    color:green;
+}
+#amount_available,#available_symbol{
+    color: yellow;
+}
+#amount_spent,#spent_symbol{
+    color:red;
+}
+.income_area input{
+    border: none;
+    
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    background-color: beige;
+}
+.income_area{
+    margin-top: 20px;
+    margin-left: 10px;
+    padding: 35px;
+   height: 250px;
+   width: 400px;
+   border: 2px solid gold;
+   border-radius: 10px;
+}
+
+.expanse_area{
+    margin-top: 20px;
+    margin-left: 120px;
+    padding: 35px;
+   height: 300px;
+   width: 400px;
+   border: 2px solid gold;
+   border-radius: 10px;
+   /* background-color: #bc4749; */
+}
+.expanse_area input{
+    
+    border: none;
+    padding: 10px;
+    border-radius: 10px;
+    outline: none;
+    background-color: beige;
+}
+.expanse_area input:hover{
+    border:2px solid gold;
+}
+.income_area #description{
+    width:300px
+}
+.income_area input:hover{
+    border:2px solid gold;
+}
+.expanse_area #description{
+    width:300px
+}
+.income_area #amount_income{
+    width:300px
+}
+.expanse_area #amount_income{
+    width:300px
+}
+.income_area  #amount{
+    
+    width:300px;
+}
+.expanse_area #amount{
+    
+    width:300px;
+}
+.input_area{
+    display: flex;
+    
+}
+.income_area input::-webkit-outer-spin-button,
+.expanse_area input::-webkit-outer-spin-button{
+    -webkit-appearance: none;
+}
+
+.income_area  #add-btn,
+.income_area  #add_expense{
+    border: none;
+    padding: 10px 20px;
+    color: beige;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+}
+.expanse_area #add-btn,
+.expanse_area #add_expense{
+    border: none;
+    
+    padding: 10px 20px;
+    color: beige;
+    border-radius: 10px;
+    outline: none;
+    cursor: pointer;
+}
+
+#add-btn{
+   
+    background-color: green;
+}
+.rest-btn{
+    border: none;
+    background-color: transparent;
+    margin: 5px;
+   
+}
+#add_expense{
+    margin-left: 25px;
+    background-color: red;
+}
+.items{
+    height: 00px;
+    background-color: rgb(192, 218, 209);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 70%;
+    max-width: 700px;
+}
+#income_container h2{
+    color: green;
+}
+#expenses_container h2{
+    color: red;
+}
+.item_container .container{
+    
+    width:50%;
+    border-radius: 10px;
+    border: 2px solid gold;
+}
+.container .item{
+
+    width: 420px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    margin: 15px ;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px 10px 5px 30px;
+    position: relative;
+}
+.item_expence{
+    display: flex;
+  
+}
+.expence span, .expence p{
+    color: red;
+}
+.items .material-symbols-outlined{
+    position: absolute;
+    top:0;
+    right: 0;
+    height: 100px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:white ;
+    background-color: red;
+    border-top-right-radius:15px ;
+    border-bottom-right-radius: 15px;
+    cursor: pointer;
+    transform: translateX(30px);
+    opacity: 0;
+}
+
+.items_container{
+    border: 2px solid gold;
+    border-radius: 10px;
+    margin: 50px;
+    padding: 10px;
+}
+/* table{
+    border: 2px;
+} */
+
+
+
+/* 
+#expense_list table {
+    text-align: center;
+    padding: 10px 0 ;
+    margin-top: 5%;
+    border: 2px solid grey;
+    margin:  0 0 2px;
+    border-collapse: collapse;
+    
+} */
+
+
+
+/* 
+#expense_list table th{
+    width: 2%;
+} */
